@@ -1,0 +1,23 @@
+{
+  "name": "memory-game",
+  "version": "0.1.0",
+  "description": "The classic memory card game!",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p build && babel src/index.js | browserify - > build/index.js",
+    "clean": "rm -rf build"
+  },
+  "keywords": [
+      "memory game",
+      "memory card game"
+  ],
+  "author": "Benjamin Toll <benjam72@yahoo.com> (http://www.benjamintoll.com)",
+  "license": "GPLv3",
+  "dependencies": {
+    "pete-dom": "github:btoll/pete-dom"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "browserify": "^14.4.0"
+  }
+}
