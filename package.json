@@ -8,8 +8,8 @@
     "clean": "rm -rf build"
   },
   "keywords": [
-      "memory game",
-      "memory card game"
+    "memory game",
+    "memory card game"
   ],
   "author": "Benjamin Toll <benjam72@yahoo.com> (http://www.benjamintoll.com)",
   "license": "GPLv3",

@@ -109,8 +109,7 @@ dom.ready(() => {
         // Since there's only one handler for the entire page we need to make sure the user actually clicked on a card and discard all other events.
         if (reCard.test(target.id)) {
             target.firstChild.style.display = 'block';
-            // TODO: getFirst/getLast method on composite object?
-            selectedCards.push([element.gets('span', target).elements[0].textContent, target.id]);
+            selectedCards.push([element.gets('span', target).getFirst().textContent, target.id]);
 
             if (selectedCards.length === 2) {
                 // Send along the text from within the paragraph (it will be a number) and the div id as an array.
