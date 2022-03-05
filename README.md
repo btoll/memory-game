@@ -2,17 +2,25 @@
 
 [![npm](https://img.shields.io/npm/v/memory-game.svg)](https://www.npmjs.com/package/memory-game)
 
-Demo: https://www.theowlsnestfarm.com/memory-game/
+Demo: https://benjamintoll.com/memory-game/
 
-## Installation
+## Install and Build
 
-`npm i memory-game`
+```
+$ git clone git@github.com:btoll/memory-game.git
+$ cd memory-game
+$ npm install
+$ npm run build
+```
 
-## Building and Deploying
+This will run the `babel` and `browserify` packages to prepare this for the browser.  Everything is written to the `./build` directory.
 
-1. `npm run build`
-2. Copy `index.html` and `build/` to your web server.
-3. Rub a dog's tummy.
+All that is needed to run the application is a web server that serves files out of a directory with the following structure:
+
+```
+./memory-game
+├── index.html
+└── build/
 
 ## Screenshots
 
