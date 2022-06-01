@@ -4,7 +4,7 @@
   "description": "The classic memory card game!",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p build && babel src/index.js | browserify - > build/index.js",
+    "build": "npm run clean && mkdir build && babel src/index.js | browserify - > build/index.js",
     "clean": "rm -rf build"
   },
   "keywords": [

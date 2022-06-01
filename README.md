@@ -15,6 +15,12 @@ $ npm run build
 
 This will run the `babel` and `browserify` packages to prepare this for the browser.  Everything is written to the `./build` directory.
 
+Better yet, use `systemd-nspawn` as your container manager!
+
+```
+$ sudo systemd-nspawn --quiet --bind $(pwd):/build --machine npm-build
+```
+
 All that is needed to run the application is a web server that serves files out of a directory with the following structure:
 
 ```
